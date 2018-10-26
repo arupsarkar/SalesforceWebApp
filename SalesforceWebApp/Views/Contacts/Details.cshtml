@@ -1,0 +1,458 @@
+﻿@model SalesforceWebApp.Models.Salesforce.Contact
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Contact</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IsDeleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsDeleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MasterRecordId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MasterRecordId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Salutation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Salutation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherStreet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherStreet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherPostalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherPostalCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherCountry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherCountry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherLatitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherLatitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherLongitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherLongitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MailingStreet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MailingStreet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MailingCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MailingCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MailingState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MailingState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MailingPostalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MailingPostalCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MailingCountry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MailingCountry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MailingLatitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MailingLatitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MailingLongitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MailingLongitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MobilePhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MobilePhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HomePhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HomePhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OtherPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssistantPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssistantPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReportsToId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReportsToId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Department)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssistantName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssistantName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeadSource)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeadSource)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Birthdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Birthdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OwnerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedById)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedById)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastModifiedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastModifiedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastModifiedById)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastModifiedById)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SystemModstamp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SystemModstamp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastActivityDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastActivityDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastCURequestDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastCURequestDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastCUUpdateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastCUUpdateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastViewedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastViewedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastReferencedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastReferencedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailBouncedReason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailBouncedReason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailBouncedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailBouncedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsEmailBounced)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsEmailBounced)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhotoUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhotoUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Jigsaw)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Jigsaw)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JigsawContactId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JigsawContactId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CleanStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CleanStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Level__c)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Level__c)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Languages__c)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Languages__c)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
