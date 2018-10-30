@@ -15,7 +15,7 @@ namespace SalesforceWebApp.Controllers
     {
 
         // Note: the SOQL Field list, and Binding Property list have subtle differences as custom properties may be mapped with the JsonProperty attribute to remove __c
-        const string _ContactsPostBinding = "Id,Salutation,FirstName,LastName,MailingStreet,MailingCity,MailingState,MailingPostalCode,MailingCountry,Phone,Email";
+        const string _ContactsPostBinding = "Id,Salutation,FirstName,LastName,MailingStreet,MailingCity,MailingState,MailingPostalCode,MailingCountry,Phone,Email,MobilePhone";
         // GET: Contacts
         public async Task<ActionResult> Index()
         {
@@ -26,7 +26,7 @@ namespace SalesforceWebApp.Controllers
                     async (client) =>
                     {
                         QueryResult<Contact> contacts =
-                            await client.QueryAsync<Contact>("SELECT Id, Salutation, FirstName, LastName, MailingCity, MailingState, MailingCountry From Contact");
+                            await client.QueryAsync<Contact>("SELECT Id, Name, Salutation, FirstName, LastName, Phone, Email, MobilePhone From Contact ORDER BY Name");
                         return contacts.Records;
                     }
                     );
@@ -54,7 +54,7 @@ namespace SalesforceWebApp.Controllers
                     async (client) =>
                     {
                         QueryResult<Contact> contacts =
-                            await client.QueryAsync<Contact>("SELECT Id, Salutation, FirstName, LastName, MailingStreet, MailingCity, MailingState, MailingPostalCode, MailingCountry, Phone, Email From Contact Where Id = '" + id + "'");
+                            await client.QueryAsync<Contact>("SELECT Id, Salutation, FirstName, LastName, MailingStreet, MailingCity, MailingState, MailingPostalCode, MailingCountry, Phone, Email, MobilePhone, Name, title From Contact Where Id = '" + id + "'");
                         return contacts.Records;
                     }
                     );
@@ -82,7 +82,7 @@ namespace SalesforceWebApp.Controllers
                     async (client) =>
                     {
                         QueryResult<Contact> contacts =
-                            await client.QueryAsync<Contact>("SELECT Id, Salutation, FirstName, LastName, MailingStreet, MailingCity, MailingState, MailingPostalCode, MailingCountry, Phone, Email From Contact Where Id= '" + id + "'");
+                            await client.QueryAsync<Contact>("SELECT Id, Name, Salutation, FirstName, LastName, Phone, Email, MobilePhone From Contact Where Id= '" + id + "'");
                         return contacts.Records;
                     }
                     );
